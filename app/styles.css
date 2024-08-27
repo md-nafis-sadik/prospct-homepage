@@ -2531,7 +2531,6 @@
     margin: 0;
   }
   .tabs > ul > li {
-    margin-left: 10px;
     cursor: pointer;
     padding: 10px 20px;
     position: relative;
@@ -2791,6 +2790,8 @@
     .tabs > ul > li {
       font-size: 10px;
       margin-left: 5px;
+
+
     }
     .top-rated-sics-logo-container {
       display: none !important;
@@ -2873,7 +2874,7 @@
       width: 100% !important;
     }
     .tabs > ul > li {
-      padding: 10px 0px;
+      padding: 10px 10px;
       font-size: 12px;
     }
     .platform-content-sec {

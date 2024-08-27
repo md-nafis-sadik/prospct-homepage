@@ -181,7 +181,7 @@
     align-items: center;
     display: flex;
     justify-content: center;
-    padding: 0 60px;
+    padding: 0 0 0 80px;
     position: relative;
     z-index: 1000;
   }
@@ -376,7 +376,7 @@
     display: flex;
     padding-top: 2px;
     margin-bottom: 70px;
-    margin-left: 16px;
+
   }
   
   .main-hero-main-image {
@@ -510,7 +510,7 @@
     display: flex;
     color: #151417;
     gap: 8px;
-    flex-grow: 1;
+
     width: 100% !important;
   }
   .vertical-line {
@@ -1240,7 +1240,7 @@
     width: 100%;
   }
   .hero-gdpr-image-section {
-    margin-left: 16px;
+
     display: flex;
     flex-wrap: wrap;
   }

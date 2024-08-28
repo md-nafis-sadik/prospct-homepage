@@ -275,7 +275,17 @@ const chunkArray = (array, size) => {
     },
     {
       title: 'Sign in',
+      link: 'https://app.prospct.io/login',
+      subOptions: [], // No sub-options
+    },
+    {
+      title: 'Request Demo',
       link: '',
+      subOptions: [], // No sub-options
+    },
+    {
+      title: 'Start free Trial',
+      link: 'https://app.prospct.io/register',
       subOptions: [], // No sub-options
     },
   ];
@@ -344,6 +354,7 @@ const chunkArray = (array, size) => {
           <nav className="navbar" id="navbar-controller"  ref={headerRef}>
             <div className="nav-left" id="nav-left"  ref={navLeftRef}>
              <div className='logo-div'>
+             <Link href='/'>
               <Image 
                   width={130}
                   height={50} 
@@ -352,6 +363,7 @@ const chunkArray = (array, size) => {
                   className='mr-4'
                   alt="Company logo"
                 />
+                </Link>
                 </div>
               <div className="logo-container">
                 
@@ -1542,11 +1554,13 @@ const chunkArray = (array, size) => {
           <div className="top-rated-sics-logo-container">
             <div className="top-rated-sics-logo-row">
               <div className="top-rated-sics-logo">
-                <img 
-                  loading="lazy"
-                  src="/images/fastestimplementation.svg"
-                  alt="Logo 1"
-                />
+
+                  <img 
+                    loading="lazy"
+                    src="/images/fastestimplementation.svg"
+                    alt="Logo 1"
+                  />
+
               </div>
               <div className="top-rated-sics-logo">
                 <img 
@@ -1883,13 +1897,16 @@ const chunkArray = (array, size) => {
               <div className="top-to-btom-res-smb">
                 <i className="fa-solid fa-arrow-up main-footer-tb-arrow"></i>
               </div>
-
+            <Link href="/">
               <img 
                 width='120'
+
                 src="/images/logo.png"
                 alt="Company logo"
                 className="main-footer-logo-image"
               />
+
+              </Link>
             </div>
             <div className="main-footer-footer-socials">
               <div className="main-footer-social-icons">

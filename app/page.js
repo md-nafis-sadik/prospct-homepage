@@ -6,6 +6,7 @@ import { useEffect, useRef, useState } from 'react';
 import { FaAngleDown, FaBars } from "react-icons/fa6";
 import Testimonial from './testimonial';
 import Link from 'next/link';
+import ResponsiveSwiper from './testimonial';
 
 
 
@@ -1481,42 +1482,10 @@ const chunkArray = (array, size) => {
         </div>
 
 
-        <div className="slideshow">
-      <div
-        className="slideshowSlider"
-        style={{ transform: `translate3d(${-index * 100}%, 0, 0)` }}
-      >
-        {groupedItems.map((group, idx) => (
-          <div className="slide" key={idx}>
-            <div className="flex flex-wrap justify-center pl-0 pr-0 lg:pr-36 lg:pl-20">
-              {group.map((item, subIdx) => (
-                <Testimonial
-                  key={subIdx}
-                  quote={item.quote}
-                  user={item.user}
-                  company={item.company}
-                  image={item.image}
-                  statValue={item.statValue}
-                  statLabel={item.statLabel}
-                />
-              ))}
-            </div>
-          </div>
-        ))}
-      </div>
+<div className='mx-20'>
+        <ResponsiveSwiper/></div>
 
-      <div className="slideshowDots">
-        {groupedItems.map((_, idx) => (
-          <div
-            key={idx}
-            className={`slideshowDot${index === idx ? ' active' : ''}`}
-            onClick={() => {
-              setIndex(idx);
-            }}
-          ></div>
-        ))}
-      </div>
-    </div>
+      
 
 
 

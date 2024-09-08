@@ -2279,7 +2279,7 @@
   }
   
   .nav-item {
-    margin-top: 4px;
+
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -3986,4 +3986,19 @@
 
 .slideshowDot.active {
   background-color: #6a0dad;
+}
+
+
+/* Custom Swiper pagination styling */
+.swiper-pagination-bullet {
+  width: 10px;
+  height: 10px;
+  background-color: #000; /* Change the dot color */
+  opacity: 1; /* Ensure dots are fully visible */
+  border-radius: 0; /* Remove the circle (set to 0 for square dots, adjust for other shapes) */
+}
+
+/* Highlight active dot */
+.swiper-pagination-bullet-active {
+  background-color: #ff0000; /* Active dot color (optional) */
 }
